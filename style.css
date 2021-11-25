@@ -26,7 +26,12 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
-.task {
+.label-task {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1
+}
+.input-task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
@@ -34,7 +39,7 @@ body {
 .add-task {
   display: flex;
 }
-ul {
+.container-list {
   margin:0;
   padding: 0px;
 }
@@ -117,31 +122,31 @@ li > label {
 li >    input[type="text"] {
   width: 226px
 }
-button.delete img {
+button.btn-delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+button.btn-delete img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+.container-list#completed-tasks label {
   text-decoration: line-through
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.container-list li input[type=text] {
   display:none
 }
 
-ul li.edit-mode input[type=text] {
+.container-list li.edit-mode input[type=text] {
   display:inline-block;
   width:224px
 }
 
-ul li.edit-mode label {
+.container-list li.edit-mode label {
   display:none;
 }
