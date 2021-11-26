@@ -5,7 +5,7 @@
   font-family: Lato, sans-serif;
 }
 
-.container {
+.container-header{
   width: 500px;
   margin: 0 auto;
   display: block;
@@ -16,13 +16,13 @@
   width: 100%;
 }
 
-.container .more_inf {
+.container-header .more_inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-  .container { 
+  .container-header { 
     text-align: center;
   }
 
@@ -79,13 +79,12 @@ button {
   color: #3a3a3a;
 }
 /* Heading */
-h3,
-.container-main__label {
+.container-main__heading {
   color: #333;
   font-weight: 700;
   font-size: 15px;
   border-bottom: 2px solid #333;
-  padding: 30px 0 10px;
+  padding: 46px 0 10px;
   margin: 0;
   text-transform: uppercase;
 }
@@ -108,9 +107,11 @@ h3,
 }
 
 /* New Task */
-.container-main__label{
+
+.container-main__heading-add {
   display: block;
   margin: 0 0 20px;
+  padding: 46px 0 10px
 }
 
 .input-new {
@@ -157,9 +158,13 @@ h3,
 }
 
 /* Completed */
-#completed-tasks .label-task{
+.completed-tasks .label-task{
   text-decoration: line-through;
   color: #888;
+}
+
+.completed-heading {
+  padding: 30px 0 10px
 }
 
 /* Edit Task */
