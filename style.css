@@ -116,7 +116,6 @@ button {
 
 .section__input-new {
   width: 318px;
-  display: inline-block;
 }
 
 /* Task list */
@@ -171,6 +170,9 @@ button {
 /* Edit Task */
 .section__input {
   display: none;
+}
+.section__input-new {
+  display: inline-block;
 }
 
 .section__edit-mode .section__input {
